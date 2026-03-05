@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday – Oriyomi Abdul-Rahmon Hamzat</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="birthday-badge" onclick="shootConfetti()">🎂<br>HBD!</div>
+  <button class="mute-btn" id="muteBtn" onclick="toggleMute()">♪ MUTE</button>
+
+  <!-- ════════════════════ HERO ════════════════════ -->
+  <section id="hero">
+    <p class="hero-top-ornament">— A CELEBRATION OF GREATNESS —</p>
+
+    <div class="portrait-wrapper">
+      <div class="portrait-ring"></div>
+      <div class="portrait-ring-2"></div>
+      <div class="birthday-tag">BIRTHDAY HONOREE</div>
+
+      <img class="portrait-img" src="Gold.png" alt="Oriyomi Abdul-Rahmon Hamzat" />
+
+      <div class="portrait-glow"></div>
+    </div>
+
+    <p class="hero-happy">Happy Birthday</p>
+    <h1 class="hero-name">(ALH) DR.ORIYOMI ABDUL-RAHMON HAMZAT</h1>
+    <p class="hero-subtitle">A Role Model &nbsp;·&nbsp; A Visionary Leader &nbsp;·&nbsp; A Leader of Tomorrow</p>
+
+    <div class="gold-divider"></div>
+
+    <p class="hero-message">
+      "Wishing you long life, sound health, prosperity, and greater impact as you continue to inspire generations.
+      May every year bring you renewed strength, deeper purpose, and boundless joy."
+    </p>
+
+    <div class="btn-row">
+      <button class="gold-btn gold-btn-solid" onclick="togglePanel('appreciation')">✦ Send Appreciation</button>
+      <button class="gold-btn" onclick="togglePanel('agidigbo')">📻 Greet AGIDIGBO FM 88.7</button>
+      <button class="gold-btn" onclick="togglePanel('courtesy')">🎖️ Courtesy &amp; Respect</button>
+    </div>
+
+    <div class="countdown-wrap">
+      <div class="countdown-box"><span class="countdown-num" id="cd-d">--</span><span class="countdown-lbl">DAYS</span>
+      </div>
+      <div class="countdown-box"><span class="countdown-num" id="cd-h">--</span><span class="countdown-lbl">HRS</span>
+      </div>
+      <div class="countdown-box"><span class="countdown-num" id="cd-m">--</span><span class="countdown-lbl">MIN</span>
+      </div>
+      <div class="countdown-box"><span class="countdown-num" id="cd-s">--</span><span class="countdown-lbl">SEC</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ APPRECIATION PANEL ════════════════════ -->
+  <div id="panel-appreciation" class="content-panel">
+    <div class="panel-inner">
+      <span class="panel-label">— WORDS FROM THE HEART —</span>
+      <h2 class="panel-title">A Tribute to True Leadership</h2>
+      <div class="gold-divider-wide"></div><br><br>
+      <p class="panel-body">Your leadership transcends position, title, or platform. You are more than a voice — you are
+        a <strong>movement</strong>. In a world that often rewards noise over substance, you chose truth. You chose
+        courage. You chose people over politics, and principles over popularity.</p>
+      <p class="panel-body">The name <strong>Oriyomi Abdul-Rahmon Hamzat</strong> has become synonymous with integrity,
+        courage, and purpose. You have shown that authentic leadership is not about commanding from above, but about
+        <strong>walking alongside the people</strong> — amplifying their voices, defending their rights, and lighting
+        their paths.
+      </p>
+      <p class="panel-body">You inspire hope in the hopeless. You give language to struggles that were once silent. You
+        remind us all that one voice — steady, principled, and fearless — can shift the tide of an entire generation.
+        Today, we celebrate not just a birthday, but a <strong>legacy in motion</strong>.</p>
+      <p class="panel-body">May this new year bring you the strength of a thousand more victories, the wisdom to lead
+        even deeper, and the joy that your own sacrifice has earned. <strong>Long may you reign, long may you
+          inspire.</strong></p>
+      <br>
+      <div class="gold-divider-wide"></div>
+      <button class="panel-close" onclick="togglePanel('appreciation')">✕ CLOSE</button>
+    </div>
+  </div>
+
+  <!-- ════════════════════ AGIDIGBO PANEL ════════════════════ -->
+  <div id="panel-agidigbo" class="content-panel">
+    <div class="panel-inner">
+      <span class="panel-label">— A MESSAGE OF HONOUR —</span>
+      <h2 class="panel-title">AGIDIGBO FM 88.7</h2>
+      <p
+        style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:5px;color:var(--gold);margin-bottom:30px;font-style:italic;">
+        The Voice That Echoes Truth</p>
+      <div class="gold-divider-wide"></div>
+      <div class="icons-row">
+        <div class="icon-item">
+          <div class="icon-circle">🎙️</div><span>BROADCAST</span>
+        </div>
+        <div class="icon-item">
+          <div class="icon-circle">📡</div><span>SIGNAL</span>
+        </div>
+        <div class="icon-item">
+          <div class="icon-circle">🏆</div><span>EXCELLENCE</span>
+        </div>
+        <div class="icon-item">
+          <div class="icon-circle">🤝</div><span>TEAMWORK</span>
+        </div>
+      </div>
+      <p class="panel-body">To the hardworking, dedicated, and passionate team of <strong>AGIDIGBO FM 88.7</strong> —
+        you are the silent architects of impact. Every broadcast, every programme, every late night in the studio is a
+        contribution to something far greater than ratings or reach.</p>
+      <p class="panel-body">You carry the vision of a leader who believes in the power of information, truth, and
+        community. Your commitment and professionalism <strong>amplify a mission that touches countless lives</strong>
+        every single day — in homes, in markets, in offices, across the streets of this great region.</p>
+      <p class="panel-body">Today, as we celebrate your visionary leader, we also celebrate <strong>you</strong> — the
+        backbone, the heartbeat, and the soul of AGIDIGBO FM 88.7. You are not just employees; you are <strong>stewards
+          of truth</strong>. Keep broadcasting. Keep shining. The frequency of greatness never fades.</p>
+      <br>
+      <div
+        style="background:linear-gradient(135deg,rgba(201,168,76,0.08),rgba(201,168,76,0.02));border:1px solid rgba(201,168,76,0.25);border-radius:4px;padding:24px;margin-top:20px;">
+        <p style="font-family:'Cinzel',serif;font-size:20px;color:var(--gold-light);letter-spacing:3px;">88.7 FM</p>
+        <p
+          style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);letter-spacing:4px;font-style:italic;margin-top:6px;">
+          Frequency of Excellence</p>
+      </div>
+      <button class="panel-close" onclick="togglePanel('agidigbo')">✕ CLOSE</button>
+    </div>
+  </div>
+
+  <!-- ════════════════════ COURTESY PANEL ════════════════════ -->
+  <div id="panel-courtesy" class="content-panel">
+    <div class="panel-inner">
+      <span class="panel-label">— WITH UTMOST RESPECT —</span>
+      <h2 class="panel-title">Courtesy &amp; Respect</h2>
+      <div class="gold-divider-wide"></div><br>
+
+      <div class="courtesy-card">
+        <p class="panel-body">With the deepest reverence and sincerest admiration, this digital tribute is humbly
+          presented to honour a man whose life exemplifies <strong>leadership, humility, and devoted service</strong> to
+          his people.</p>
+        <p class="panel-body">Great men are not measured by the titles they hold, but by the lives they transform, the
+          truth they uphold, and the generations they inspire. You, sir, are measured by all three — and the score is
+          one of <strong>extraordinary greatness</strong>.</p>
+        <p class="panel-body">This tribute is a small token of immense respect. May your path ahead be illuminated with
+          honour, may your health be ever-preserved, and may your legacy grow richer with every passing year.
+          <strong>You deserve all the celebrations the world can offer.</strong>
+        </p>
+        <div style="margin-top:28px;">
+          <p class="presented-by">— COURTESY PRESENTED BY —</p>
+          <p class="presented-name">OLADEPO ROKEEB OLAYINKA<br><span style="color:var(--gold);font-size:0.85em;">PKA
+              ALPHCAST</span></p>
+          <p class="presented-name">oladeporokeeb203@gmail.com<br><span style="color:var(--gold);font-size:0.85em;">TEL:
+              +2347059173318</span></p>
+          <p
+            style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--white-soft);font-style:italic;margin-top:10px;letter-spacing:2px;">
+            Software Developer</p>
+        </div>
+      </div>
+
+      <!-- ── PHOTO UPLOAD ── -->
+      <div class="courtesy-photo-wrap">
+        <span class="courtesy-photo-label">— ADD YOUR PHOTO HERE —</span>
+        <div class="photo-upload-box" id="photoUploadBox">
+          <!-- FIX: stopPropagation on input so remove button click doesn't re-open file picker -->
+          <input type="file" accept="image/*" id="courtesyImageInput" onchange="previewCourtesyPhoto(event)" />
+          <span class="upload-icon">📷</span>
+          <p class="upload-hint">TAP TO UPLOAD<br>YOUR PHOTO</p>
+          <img class="courtesy-preview-img" id="courtesyPreview" alt="Courtesy Photo" />
+          <button class="remove-photo-btn" id="removeBtn" onclick="removeCourtesyPhoto(event)">✕ REMOVE</button>
+        </div>
+      </div>
+
+      <!-- Digital Signature -->
+      <div style="margin-top:48px;text-align:center;">
+        <p style="font-family:'Playfair Display',serif;font-size:34px;font-style:italic;color:var(--gold-light);">
+          Alphcast</p>
+        <div class="sig-line"></div>
+        <p style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:3px;color:var(--gold);">DIGITAL
+          SIGNATURE</p>
+      </div>
+
+      <button class="panel-close" onclick="togglePanel('courtesy')">✕ CLOSE</button>
+    </div>
+  </div>
+
+  <!-- ════════════════════ LEGACY ════════════════════ -->
+  <section id="legacy">
+    <p class="legacy-super reveal">The Man. The Mission. The Movement.</p>
+    <h2 class="legacy-title reveal">Leader of Tomorrow</h2>
+    <div class="legacy-pillars">
+      <div class="pillar-card reveal">
+        <div class="pillar-icon">🌟</div>
+        <p class="pillar-title">Role Model</p>
+        <p class="pillar-text">A life that young people look to as proof that integrity and purpose can coexist with
+          power and influence.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <div class="pillar-icon">🎙️</div>
+        <p class="pillar-title">Voice of Truth</p>
+        <p class="pillar-text">Unapologetically honest in a world of half-truths. His voice carries the weight of a
+          people's deepest hopes.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <div class="pillar-icon">🕊️</div>
+        <p class="pillar-title">Symbol of Hope</p>
+        <p class="pillar-text">For those who feel unheard, his presence is a reminder that courage still walks among us.
+        </p>
+      </div>
+      <div class="pillar-card reveal">
+        <div class="pillar-icon">🔥</div>
+        <p class="pillar-title">Builder of Leaders</p>
+        <p class="pillar-text">His greatest achievement is not what he has built — it is the leaders he has inspired to
+          build after him.</p>
+      </div>
+    </div>
+    <div class="gold-divider-wide" style="margin-bottom:56px;"></div>
+    <div class="legacy-quote reveal">
+      The measure of a great leader is not the height from which they stand, but the number of people they lift to stand
+      beside them.
+    </div>
+  </section>
+
+  <!-- ════════════════════ SIGNATURE ════════════════════ -->
+  <section id="signature">
+    <span class="sig-label">— DIGITAL TRIBUTE SIGNATURE —</span>
+    <div class="sig-text">Oriyomi</div>
+    <div class="sig-line"></div>
+    <p class="sig-sub">A Name Written in the Annals of Leadership</p>
+  </section>
+
+  <!-- ════════════════════ FOOTER ════════════════════ -->
+  <footer>
+    <div class="footer-ornament">✦ ✦ ✦</div>
+    <p class="footer-text">"This digital tribute was specially crafted to honor a life of impact, leadership, and
+      inspiration. One voice. One legacy. One celebration."</p>
+    <div class="gold-divider" style="margin-bottom:24px;"></div>
+    <p class="footer-copy">© 2025 &nbsp;·&nbsp; CRAFTED WITH RESPECT BY ALPHCAST &nbsp;·&nbsp; ALL RIGHTS RESERVED</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
